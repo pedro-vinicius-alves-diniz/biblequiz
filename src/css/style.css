@@ -38,7 +38,7 @@ header img{
     margin-bottom: 3rem;
 }
 
-.container-quiz{
+.container{
     padding: 3rem;
     border: none;
     border-radius: 1.5rem;
@@ -53,8 +53,8 @@ header img{
     justify-content: center;
     
 }
-.container-quiz p{
-    font-size: 2rem;
+.container p{
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     color: var(--primary-color-1);
     font-weight: 700;
