@@ -1,11 +1,11 @@
 :root{
-    --neutral-white: "#FFFFFF";
-    --neutral-black: "#000000";
+    --neutral-white: #FFFFFF;
+    --neutral-black: #000000;
 
-    --primary-color-1: "#FFCE29";
-    --primary-color-2: "#FDA4AD";
+    --primary-color-1: rgb(255, 206, 41);
+    --primary-color-2: rgb(253, 164, 173);
 
-    -secundary-color-1: "#9C34C2";
+    --secundary-color-1: rgb(156, 52, 194);
 }
 
 *{
@@ -18,4 +18,92 @@ body{
     font-family: "Poppins", serif;
     width: 100%;
     height: 100dvh;
+
+    /* background-color: var(--primary-color-2); */
+    background-image: radial-gradient(rgba(0,0,0,0.1),rgba(253, 164, 173, 0.6), rgb(253, 164, 173));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+header{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 150px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.container-quiz{
+    padding: 3rem;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px 5px rgba(156, 52, 194, 0.5);
+    background-color: var(--secundary-color-1);
+    max-width: 500px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-quiz p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color-1);
+    font-weight: 700;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.options{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 1rem;
+    flex-shrink: 1;
+    
+
+    border: none;
+    border-radius: 20px;
+    background-color: var(--primary-color-2);
+}
+.option:hover{
+    background-color: var(--neutral-white);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.option:hover > a{
+    color: var(--secundary-color-1);
+    font-weight: 700;
+    transform: scale(1.1);
+}
+.option a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--neutral-black);
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+
+footer{
+    color: #3e3e3e;
+    font-weight: 700;
+}
+
+
