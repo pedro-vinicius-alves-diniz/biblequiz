@@ -38,9 +38,8 @@ header img{
     margin-bottom: 3rem;
 }
 
-#container-quiz{
-    display: none;
-}
+/* #container-quiz{display: none;} */
+
 .container{
     padding: 3rem;
     border: none;
@@ -100,12 +99,13 @@ header img{
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     color: var(--secundary-color-1);
-    font-weight: 700;
 }
 
 #correct{
     display: none;
 }
+
+#container-posgame{ display: none;}
 
 footer{
     color: #3e3e3e;
