@@ -24,25 +24,41 @@
             <img src="assets/quiz.svg" alt="Icone de um Quiz">
         </header>
 
-        <section class="container">
+        <section id="container-quiz" class="container">
             <p id="pergunta">A pergunta vai aparecer aqui?</p>
             <ul class="options">
-                <li class="option">
-                    <a id="option1" href="">Alternativa 1</a>
+                <li class="option" id="option1">
+                    Alternativa 1
                 </li>
-                <li class="option">
-                    <a id="option2" href="">Alternativa 2</a>
+                <li class="option" id="option2">
+                    Alternativa 2
                 </li>
-                <li class="option">
-                    <a id="option3" href="">Alternativa 3</a>
+                <li class="option" id="option3">
+                    Alternativa 3
                 </li>
-                <li class="option">
-                    <a id="option4" href="">Alternativa 4</a>
+                <li class="option" id="option4">
+                    Alternativa 4
                 </li>
+                <li id="correct"></li>
             </ul>
         </section>
 
         <!-- FAZER SEÇÃO QUE APARECERÁ AO ACABAR AS 10 PERGUNTAS -->
+        <section id="container-posgame" class="container">
+            <p>Jogo finalizado.</p>
+            <p>
+                O seu Score final é: <span class="score"></span>/10
+            </p>
+
+            <ul class="options">
+                <li class="option" id="play-again">
+                    JOGAR NOVAMENTE
+                </li>
+                <li class="option" id="close">
+                    FECHAR
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer>
