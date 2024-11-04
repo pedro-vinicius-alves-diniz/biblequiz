@@ -31,14 +31,41 @@ body{
 header{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 header img{
     width: 150px;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+header span{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primary-color-1);
+    color: var(--neutral-black);
+    animation: animateTime .4s infinite alternate;
+}
+@keyframes animateTime {
+    from{
+        transform: scale(1);
+        background-color: var(--neutral-white);
+    }
+    to{
+        transform: scale(1.3);
+        background-color: var(--primary-color-2);
+    }
+}
 
-/* #container-quiz{display: none;} */
+#container-quiz{display: none;}
 
 .container{
     padding: 3rem;
@@ -80,7 +107,7 @@ header img{
     max-width: 300px;
     padding: 1rem;
     flex-shrink: 1;
-    
+    text-align: center;
 
     border: none;
     border-radius: 20px;
