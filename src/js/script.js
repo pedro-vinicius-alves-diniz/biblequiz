@@ -28,8 +28,7 @@ audioClock.loop = true
 
 //FUNÇÕES
 function updateScreen(event) {
-    clock.innerText = 7;
-    
+    clock.innerText = 5;
 
     intervalId = setInterval (() =>{ 
         clock.innerText -= 1
@@ -39,7 +38,7 @@ function updateScreen(event) {
     timeoutId = setTimeout(() => {
         clearInterval(intervalId);
         sytemNextQuestion();
-    }, 7000)
+    }, 5000)
 
     
 
@@ -59,6 +58,7 @@ function updateScreen(event) {
 
 // ALGORITMO DE PONTUAÇÃO
 const systemScore = (event) => {
+
     if (event.target.textContent === anwser.textContent) {
         score += 1
     }
@@ -72,9 +72,8 @@ const sytemNextQuestion = () => {
         containerPosGame.style.display = "flex";
         spanScore.innerHTML = score
         clearInterval(intervalId);
-        clock.innerText = 0
         audioClock.pause();
-
+        clock.innerText = 0
     } else {
         currentQuestion += 1;
         clearTimeout(timeoutId);
